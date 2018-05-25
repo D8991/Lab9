@@ -1,0 +1,2 @@
+C:\Users\student\Documents\Lab9\Lab9\bin\Debug\Lab9.exe.config
+F:\Программирование\Лабы\Lab9\Lab9\bin\Debug\Lab9.exe.config
