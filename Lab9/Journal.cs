@@ -8,18 +8,32 @@ namespace Lab9
 {
    public class Journal : Good
     {
-        public DateTime DataOfPublic { get; set; }
+        private DateTime _DateOfPublic;
+        public DateTime DateOfPublic
+        { 
+        get
+            {
+                if (_DateOfPublic == null)
+                    throw new Exception("Укажите дату публикации");
+                else
+                    return _DateOfPublic;
+            }
+    set
+            {
+                _DateOfPublic = value;
+            }
+        }
 
 
-        public Journal(Sale Good_Sale, string Book_Title, double Price, DateTime DataOfPublic) : base(Good_Sale, Book_Title, Price)
+        public Journal(Sale Good_Sale, string Book_Title, double Price, DateTime DateOfPublic) : base(Good_Sale, Book_Title, Price)
         {
-            this.DataOfPublic = DataOfPublic;
+            this.DateOfPublic = DateOfPublic;
 
         }
         public override string GoodInfo()
         {
 
-            return "Название товара: " + Good_Sale + ";" + "Заголовок: " + Book_Title + ";" + "Цена: " + Price + ";" + "Дата издания: " + DataOfPublic;
+            return "Название товара: " + Good_Sale + ";" + "Заголовок: " + Book_Title + ";" + "Цена: " + Price + ";" + "Дата издания: " + DateOfPublic;
 
         }
     }

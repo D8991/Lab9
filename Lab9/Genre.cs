@@ -8,9 +8,52 @@ namespace Lab9
 {
   public class Genre : Good, IGenre 
     {
-        public string Book_Author { get; set; }
-        public string Book_Publisher { get; set; }
-        public Good Book_Genre { get; set; }
+        private string _Book_Author;
+        private string _Book_Publisher;
+        private Good _Book_Genre;
+        public string Book_Author
+        {
+            get
+            {
+                if (String.IsNullOrEmpty(Book_Author))
+                    throw new Exception("Имя автора не может быть пустым");
+                else
+                    return _Book_Author;
+            }
+            set
+            {
+                _Book_Author = value;
+
+            }
+        }
+        public string Book_Publisher
+        {
+            get
+            {
+                if (String.IsNullOrEmpty(Book_Publisher))
+                    throw new Exception("Издательство не может быть пустым");
+                else
+                    return _Book_Publisher;
+            }
+            set
+            {
+                _Book_Publisher = value;
+
+            }
+        }
+        public Good Book_Genre {
+            get
+            {
+                if (_Book_Genre == null)
+                    throw new Exception("Жанр книги не может быть пустым");
+                else
+                    return _Book_Genre;
+            }
+    set
+            {
+                _Book_Genre = value;
+            }
+        }
 
         public Genre(Sale Good_Sale, string Book_Title, double Price, string Book_Author, string Book_Publisher, Sale Book_Genre) : base(Good_Sale, Book_Title, Price)
         {
