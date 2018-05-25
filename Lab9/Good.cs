@@ -15,7 +15,7 @@ namespace Lab9
         {
              get
             {
-                    if (Good_Sale==null)
+                    if (_Good_Sale==null)
                
                         throw new Exception("Наименование товара не может быть пустым");
                     else
@@ -32,7 +32,7 @@ namespace Lab9
     {
         get
         {
-            if (String.IsNullOrEmpty(Book_Title))
+            if (String.IsNullOrEmpty(_Book_Title))
                 throw new Exception("Заголовок не может быть пустым");
             else
                 return _Book_Title;
@@ -44,17 +44,17 @@ namespace Lab9
         }
     }
 
-public double Price
-    {
-        get
-        {
-            return _Price;
-        }
-        set
-        {
-            if (value > 0)
-                _Price = value;
-            else
+             public double Price
+                  {
+                     get
+                       {
+                           return _Price;
+                       }
+                     set
+                       {
+                           if (value > 0)
+                           _Price = value;
+                    else
                 Console.WriteLine("Неверное значение цены");
         }
     }

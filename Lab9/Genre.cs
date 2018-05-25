@@ -15,7 +15,7 @@ namespace Lab9
         {
             get
             {
-                if (String.IsNullOrEmpty(Book_Author))
+                if (String.IsNullOrEmpty(_Book_Author))
                     throw new Exception("Имя автора не может быть пустым");
                 else
                     return _Book_Author;
@@ -30,7 +30,7 @@ namespace Lab9
         {
             get
             {
-                if (String.IsNullOrEmpty(Book_Publisher))
+                if (String.IsNullOrEmpty(_Book_Publisher))
                     throw new Exception("Издательство не может быть пустым");
                 else
                     return _Book_Publisher;

@@ -1,2 +1,7 @@
 C:\Users\student\Documents\Lab9\Lab9\bin\Debug\Lab9.exe.config
 F:\Программирование\Лабы\Lab9\Lab9\bin\Debug\Lab9.exe.config
+F:\Программирование\Лабы\Lab9\Lab9\bin\Debug\Lab9.exe
+F:\Программирование\Лабы\Lab9\Lab9\bin\Debug\Lab9.pdb
+F:\Программирование\Лабы\Lab9\Lab9\obj\Debug\Lab9.csprojResolveAssemblyReference.cache
+F:\Программирование\Лабы\Lab9\Lab9\obj\Debug\Lab9.exe
+F:\Программирование\Лабы\Lab9\Lab9\obj\Debug\Lab9.pdb

@@ -33,7 +33,7 @@ namespace Lab9
         public override string GoodInfo()
         {
 
-            return "Название товара: " + Good_Sale + ";" + "Заголовок: " + Book_Title + ";" + "Цена: " + Price + ";" + "Дата издания: " + DateOfPublic;
+            return "Название товара: " + Good_Sale + ";" + "Заголовок: " + Book_Title + ";" + "Цена: " + Price + ";" + "Дата издания: " + DateOfPublic.ToString ("dd MMMM yyyy");
 
         }
     }

@@ -8,20 +8,20 @@ namespace Lab9
 {
    public class Sale
     {
-        private string Sale_name;
+        private string _Sale_Name;
       public string Sale_Name
              
             {
             get
             {
-                if (String.IsNullOrEmpty(Sale_name))
+                if (String.IsNullOrEmpty(_Sale_Name))
                     throw new Exception("Наименование товара не может быть пустым");
                 else
-                    return Sale_Name;
+                    return _Sale_Name;
             }
     set
             {
-                Sale_Name = value;
+                _Sale_Name = value;
             }
         }
             public Sale(string Sale_Name)

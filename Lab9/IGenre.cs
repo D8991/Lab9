@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab9
 {
-   interface IGenre
+   public interface IGenre
     {
         Good Book_Genre { get; set; }
 
